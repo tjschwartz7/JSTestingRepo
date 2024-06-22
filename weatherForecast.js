@@ -55,7 +55,8 @@ fetch(coordsUrl)
     .catch(error => console.error('Error fetching forecast:', error));
 
     
-
+    //I could make this code execute after the API calls by adding a 
+    //blocking wait sleep timer before it.
     console.log("This'll get printed before the API call data :)\n");
     console.log("I wanted to prove to myself that the JS code is executing linearly and the .then");
     console.log("function calls were basically a new thread being created which has code");
